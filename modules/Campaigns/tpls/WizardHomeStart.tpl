@@ -94,7 +94,8 @@
 		<td  align="right" width='30%'>
 			<table><tr>
 				<td><div id="start_button_div"><input id="startbutton" type='submit' title="{$MOD.LBL_START}" class="button" name="{$MOD.LBL_START}" value="{$MOD.LBL_START}"></div></td>
-			</tr></table>
+			</tr>
+            </table>
 		</td>
 	</tr>
 	</table>
