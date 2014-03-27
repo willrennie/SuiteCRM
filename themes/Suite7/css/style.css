@@ -5257,3 +5257,30 @@ input[type=text].cstm_code {
 #lessmargin {
     margin: 0 50px 0 0;
 }
+
+.campaign_intro {
+    text-align:center;
+    margin:0 auto;
+    padding:10px 000;
+}
+
+#campaign_wizard {
+    margin:0 auto;
+}
+#campaign_choice {
+display:inline-block;
+    margin:10px;
+    padding:10px;
+    background:#ededed;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #cccccc;
+    min-height:200px !important;
+    min-width:200px !important;
+}
+
+#campaign_choice label {
+    font-size:1.5em;
+    color:#565656;
+}
