@@ -38,6 +38,7 @@
 
  ********************************************************************************/
 *}
+<h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP2}</h2>
 
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>

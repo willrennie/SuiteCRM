@@ -5284,3 +5284,29 @@ display:inline-block;
     font-size:1.5em;
     color:#565656;
 }
+
+#nav {
+    background:#ededed;
+    margin:0 auto;
+    text-align:Center;
+}
+#nav tr{
+    display: inline-block;
+
+}
+
+#nav tr td div{
+    background:#ededed;
+    font-size:1.2em;
+    margin:5px 0 5px 0;
+    padding:10px;
+
+}
+
+#nav tr td a{
+    font-weight:bold;
+}
+
+#nav tr td a:active {
+content:'\25BA'
+}

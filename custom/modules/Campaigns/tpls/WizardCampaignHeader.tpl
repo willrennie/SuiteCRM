@@ -2,31 +2,31 @@
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
- * 
+ *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
  * Free Software Foundation with the addition of the following permission added
  * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
  * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
  * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
  * details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License along with
  * this program; if not, see http://www.gnu.org/licenses or write to the Free
  * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301 USA.
- * 
+ *
  * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
  * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
- * 
+ *
  * The interactive user interfaces in modified source and object code versions
  * of this program must display Appropriate Legal Notices, as required under
  * Section 5 of the GNU Affero General Public License version 3.
- * 
+ *
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo. If the display of the logo is not reasonably feasible for
@@ -38,11 +38,12 @@
 
  ********************************************************************************/
 *}
+<h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP1}</h2>
 
-	<!-- Begin Campaign Diagnostic Link -->	
+	<!-- Begin Campaign Diagnostic Link -->
 	{$CAMPAIGN_DIAGNOSTIC_LINK}
 	<!-- End Campaign Diagnostic Link -->
-	
+
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 		<td  colspan="3"><h3>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP1} </h3></div></td>
@@ -99,33 +100,33 @@
 			inputField : "start_date", ifFormat : "{$CALENDAR_DATEFORMAT}", showsTime : false, button : "start_date_trigger", singleClick : true, step : 1, weekNumbers:false
 			{literal}
 		});
-		
+
 		Calendar.setup ({{/literal}
 			inputField : "end_date", ifFormat : "{$CALENDAR_DATEFORMAT}", showsTime : false, button : "end_date_trigger", singleClick : true, step : 2, weekNumbers:false
 		{literal}
 		});
-	
+
 
     /*
      * this is the custom validation script that will validate the fields on step1 of wizard
      */
-    
+
     function validate_step1(){
         //loop through and check for empty strings ('  ')
         requiredTxt = SUGAR.language.get('app_strings', 'ERR_MISSING_REQUIRED_FIELDS');
         var stepname = 'wiz_step_1_';
         var has_error = 0;
         var fields = new Array();
-        fields[0] = 'name'; 
+        fields[0] = 'name';
         fields[1] = 'status';
         fields[2] = 'end_date';
-        
-        var field_value = ''; 
+
+        var field_value = '';
         for (i=0; i < fields.length; i++){
             if(document.getElementById(fields[i]) !=null){
                 field_value = trim(document.getElementById(fields[i]).value);
                 if(field_value.length<1){
-                //throw error if string is empty            
+                //throw error if string is empty
                 add_error_style('wizform', fields[i], requiredTxt +' ' +document.getElementById(fields[i]).title );
                 has_error = 1;
                 }
@@ -135,7 +136,7 @@
             //error has been thrown, return false
             return false;
         }
-        //add fields to validation and call generic validation script 
+        //add fields to validation and call generic validation script
         if(validate['wizform']!='undefined'){delete validate['wizform']};
         addToValidate('wizform', 'name', 'alphanumeric', true,  document.getElementById('name').title);
         addToValidate('wizform', 'status', 'alphanumeric', true,  document.getElementById('status').title);
@@ -145,7 +146,7 @@
 
 
         return check_form('wizform');
-    }    
+    }
 
 
 

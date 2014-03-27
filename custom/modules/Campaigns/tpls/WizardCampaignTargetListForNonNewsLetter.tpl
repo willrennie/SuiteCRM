@@ -38,7 +38,7 @@
 
  ********************************************************************************/
 *}
-
+<h2 class="campaign_intro">You are currently on step: {$MOD.LBL_TARGET_LISTS}</h2>
 	<input type="hidden" id="existing_target_count" name="existing_target_count" value={$TARGET_COUNT}>
 	<input type="hidden" id="added_target_count" name="added_target_count" value=''>
 	<input type="hidden" id="wiz_list_of_existing_targets" name="wiz_list_of_existing_targets" value="">

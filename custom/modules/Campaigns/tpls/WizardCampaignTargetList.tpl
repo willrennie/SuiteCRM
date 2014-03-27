@@ -38,8 +38,9 @@
 
  ********************************************************************************/
 *}
+
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-	<tr>
+
 	<th colspan="4" align="left" ><h4>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP4}</h4></th>
 	</tr>
 	<tr>

@@ -38,6 +38,7 @@
 
  ********************************************************************************/
 *}
+<h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP3}</h2>
 
 	<input type="hidden" id="existing_tracker_count" name="existing_tracker_count" value="{$TRACKER_COUNT}">
 	<input type="hidden" id="added_tracker_count" name="added_tracker_count" value=''>
