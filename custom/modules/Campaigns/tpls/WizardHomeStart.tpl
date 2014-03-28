@@ -55,31 +55,20 @@
 
     <h1 class="campaign_intro">{$MOD.LBL_HOME_START_MESSAGE}</h1>
 	<div id='campaign_choice' >
-        <img src="index.php?entryPoint=getImage&imageName=campaign_newsletter.png" width="128" height="128" alt=""><br><label for='wizardtype_nl'>{$MOD.LBL_NEWSLETTER}<br><input type="radio"  id="wizardtype_nl" name="wizardtype" value='1'checked ></label>
+        <img src="index.php?entryPoint=getImage&imageName=campaign_newsletter.png" width="128" height="128" alt=""><br><label for='wizardtype_nl'>{$MOD.LBL_NEWSLETTER}</label><br><em>The Newsletter campaign type. This allows the user to select subscription lists to send out Newsletter Campaigns to multiple Target Lists.</em><br><label><input type="radio"  id="wizardtype_nl" name="wizardtype" value='1'checked ></label>
 	</div>
     <div id='campaign_choice' >
-        <img src="index.php?entryPoint=getImage&imageName=campaign_email.png" width="128" height="128" alt=""><br><label for='wizardtype_em'>{$MOD.LBL_EMAIL}<br><input type="radio"  id="wizardtype_em" name="wizardtype" value='2'></label>
+        <img src="index.php?entryPoint=getImage&imageName=campaign_email.png" width="128" height="128" alt=""><br><label for='wizardtype_em'>{$MOD.LBL_EMAIL}</label><br><em>The Email campaign type. This allows the user to setup a detailed email campaign to send to one or more Target Lists.</em><br><label><input type="radio"  id="wizardtype_em" name="wizardtype" value='2'></label>
     </div>
     <!--<div id='campaign_choice' >
         <label for='wizardtype_ot'>{$MOD.LBL_OTHER_TYPE_CAMPAIGN}<br><input type="radio"  id="wizardtype_ot" name='wizardtype' value='3'></label>
 	</div>-->
 
-	</td>
+    <div id ="buttons">
+<div id="start_button_div"><input id="startbutton" type='submit' title="{$MOD.LBL_START}" class="button" name="{$MOD.LBL_CREATE_YOUR_CAMPAIGN}" value="{$MOD.LBL_CREATE_YOUR_CAMPAIGN}"></div>
+    </div>
 </tr>
 </table>
-
-<div id ='buttons' >
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-	<tr>
-		<td  align="right" width='40%'>&nbsp;</td>
-		<td  align="right" width='30%'>
-			<table><tr>
-				<td><div id="start_button_div"><input id="startbutton" type='submit' title="{$MOD.LBL_START}" class="button" name="{$MOD.LBL_START}" value="{$MOD.LBL_START}"></div></td>
-			</tr></table>
-		</td>
-	</tr>
-	</table>
-</div>
 
 </form>
 <script>

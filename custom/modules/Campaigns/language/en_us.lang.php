@@ -125,6 +125,7 @@ $mod_strings = array (
   'LBL_COPY_AND_PASTE_CODE' => 'Or copy and paste the html below into an existing page',
   'LBL_CHARSET_NOTICE' => 'NOTE: Please make sure that the page containing the web-to-lead form has the following lines in the &lt;head&gt; section:',
 
+  'LBL_CREATE_YOUR_CAMPAIGN' => 'Begin Your Campaign',
   'LBL_TODETAIL_BUTTON_TITLE'=>'View Details',
   'LBL_TODETAIL_BUTTON_KEY'=>'T',
   'LBL_TODETAIL_BUTTON_LABEL'=>'View Details',
