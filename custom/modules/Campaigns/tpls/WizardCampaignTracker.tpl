@@ -39,22 +39,14 @@
  ********************************************************************************/
 *}
 <h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP3}</h2>
-
+<h3 class="campaign_header_message">{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP3}</h3>
+<hr>
+<br>
 	<input type="hidden" id="existing_tracker_count" name="existing_tracker_count" value="{$TRACKER_COUNT}">
 	<input type="hidden" id="added_tracker_count" name="added_tracker_count" value=''>
 	<input type="hidden" id="wiz_list_of_existing_trackers" name="wiz_list_of_existing_trackers" value="">
 	<input type="hidden" id="wiz_list_of_trackers" name="wiz_list_of_trackers" value="">
 	<input type="hidden" id="wiz_remove_tracker_list" name="wiz_remove_tracker_list" value="">
-
-
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-		<th colspan="4" align="left" ><h4>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP3}</h4></th>
-		</tr>
-		<tr><td class="datalabel" colspan="3">{$MOD.LBL_WIZARD_TRACKER_MESSAGE}<br></td><td>&nbsp;</td></tr>
-		<tr><td class="datalabel" colspan="4">&nbsp;</td></tr>
-
-	</table>
 	<div id='tracker_input_div'>
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
@@ -70,7 +62,7 @@
 		<tr><td colspan='4'>&nbsp;</td></tr>
 		</table>
 	</div>
-	<table width='100%' border="0" cellspacing="0" cellpadding="0">
+	<table id="trackers" width='100%' border="0" cellspacing="0" cellpadding="0">
 		<tr><td>{$MOD.LBL_TRACKERS_ADDED}</td></tr>
 		<tr><td class='list view'>
 

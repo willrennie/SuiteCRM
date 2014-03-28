@@ -39,13 +39,10 @@
  ********************************************************************************/
 *}
 <h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP2}</h2>
-
+<h3 class="campaign_header_message">{$MOD.LBL_WIZARD_BUDGET_MESSAGE}</h3>
+<hr>
+<br>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-		<th colspan="4" align="left" ><h4>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP2}</h4></th>
-		</tr>
-		<tr><td class="datalabel" colspan="3">{$MOD.LBL_WIZARD_BUDGET_MESSAGE}<br></td><td>&nbsp;</td></tr>
-		<tr><td class="datalabel" colspan="4">&nbsp;</td></tr>
 		<tr>
 		<td scope="col"><span sugar='slot14'>{$MOD.LBL_CAMPAIGN_BUDGET}</span sugar='slot'></td>
 		<td ><span sugar='slot14b'><input type="text" size="10" maxlength="15" id="budget" name="wiz_step2_budget" title="{$MOD.LBL_CAMPAIGN_BUDGET}" value="{$CAMP_BUDGET}"></span sugar='slot'></td>

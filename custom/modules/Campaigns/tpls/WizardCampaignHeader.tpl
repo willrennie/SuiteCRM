@@ -39,18 +39,14 @@
  ********************************************************************************/
 *}
 <h2 class="campaign_intro">You are currently on step: {$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP1}</h2>
-
+<h3 class="campaign_header_message">{$MOD.LBL_WIZARD_HEADER_MESSAGE}</h3>
+<hr>
 	<!-- Begin Campaign Diagnostic Link -->
 	{$CAMPAIGN_DIAGNOSTIC_LINK}
 	<!-- End Campaign Diagnostic Link -->
 
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-		<td  colspan="3"><h3>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP1} </h3></div></td>
-		<td colspan="1">&nbsp;</td>
-		</tr>
-		<tr><td class="datalabel" colspan="3">{$MOD.LBL_WIZARD_HEADER_MESSAGE}<br></td><td>&nbsp;</td></tr>
-		<tr><td class="datalabel" colspan="4">&nbsp;</td></tr>
+
 		<tr>
 		<td width="17%" scope="col"><span sugar='slot1'>{$MOD.LBL_NAME} <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span></span sugar='slot'></td>
 		<td width="33%" ><span sugar='slot1b'><input id='name' name='wiz_step1_name' aria-required="true"  title='{$MOD.LBL_NAME}' {$DISABLED}  size='50' maxlength='50' type="text" value="{$CAMP_NAME}" ></span sugar='slot'></td>

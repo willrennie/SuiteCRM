@@ -39,16 +39,11 @@
  ********************************************************************************/
 *}
 
+<h2 class="campaign_intro">You are currently on step: {$MOD.LBL_TARGET_LISTS}</h2>
+<h3 class="campaign_header_message">{$MOD.LBL_WIZARD_SUBSCRIPTION_MESSAGE}</h3>
+<hr>
+<br>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
-	<th colspan="4" align="left" ><h4>{$MOD.LBL_WIZ_NEWSLETTER_TITLE_STEP4}</h4></th>
-	</tr>
-	<tr>
-	<td colspan="4">{$MOD.LBL_WIZARD_SUBSCRIPTION_MESSAGE}<br></td>
-	</tr>
-	<tr>
-	<td colspan="4">&nbsp;</td>
-	</tr>
 	<tr>
 	<td scope='row'><span sugar='slot26'>{sugar_help text=$MOD.LBL_SUBSCRIPTION_TARGET_WIZARD_DESC }
 	{$MOD.LBL_SUBSCRIPTION_LIST_NAME}</span sugar='slot'>

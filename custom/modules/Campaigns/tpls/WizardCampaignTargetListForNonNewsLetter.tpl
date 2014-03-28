@@ -39,55 +39,51 @@
  ********************************************************************************/
 *}
 <h2 class="campaign_intro">You are currently on step: {$MOD.LBL_TARGET_LISTS}</h2>
+<h3 class="campaign_header_message">{$MOD.LBL_WIZARD_TARGET_MESSAGE1}</h3>
+<hr>
+<br>
 	<input type="hidden" id="existing_target_count" name="existing_target_count" value={$TARGET_COUNT}>
 	<input type="hidden" id="added_target_count" name="added_target_count" value=''>
 	<input type="hidden" id="wiz_list_of_existing_targets" name="wiz_list_of_existing_targets" value="">
 	<input type="hidden" id="wiz_list_of_targets" name="wiz_list_of_targets" value="">
 	<input type="hidden" id="wiz_remove_target_list" name="wiz_remove_target_list" value="">
 
-
-
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-	<th colspan="5" align="left" ><h4>{$MOD.LBL_TARGET_LISTS}</h4></th>
-	</tr>
-	<tr>
-	<td colspan="5">{$MOD.LBL_WIZARD_TARGET_MESSAGE1}<br></td>
-	</tr>
-	<tr><td colspan=5>&nbsp;</td></tr>
-	<tr>
-	<td scope="row" colspan="4">{$MOD.LBL_SELECT_TARGET}&nbsp;
-	<input id="popup_target_list_type" name="popup_target_list_type" type='hidden'>
-	<input id="popup_target_list_name" name="popup_target_list_name" type="hidden" value="">
-	<input id='popup_target_list_id' name='popup_target_list_id' title='List ID' type="hidden" value=''>
-	<input title="{$APP.LBL_SELECT_BUTTON_TITLE}" type="button"  class="button" value='{$APP.LBL_SELECT_BUTTON_LABEL}' name=btn3 id='target_list_button'
- 	onclick='open_popup("ProspectLists", 600, 400, "", true, false,  {$encoded_target_list_popup_request_data}, "single", true);'>
-	</span sugar='slot'>
-	</td>
-	<td>&nbsp;</td>
-	</tr>
-	<tr><td colspan=5>&nbsp;</td></tr>
-	<tr>
-	<td scope="row" colspan="5">{$MOD.LBL_WIZARD_TARGET_MESSAGE2}<br></td>
-	</tr>
-	<tr>
-	<td width='10%' scope="col">{$MOD.LBL_TARGET_NAME}</td>
-	<td width='20%'>
-		<input id="target_list_name" name="target_list_name" type='text' size='40'>
-	</td>
-	<td width='10%' scope="col">
-		<span sugar='slot28'>{$MOD.LBL_TARGET_TYPE}</span sugar='slot'>
-	</td>
-	<td  width='20%' >
+<div id='campaign_choice_extended' >
+    <label for='wizardtype_em'>{$MOD.LBL_WIZARD_TARGET_MESSAGE2}</label>
+    <hr>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width='10%' scope="col">{$MOD.LBL_TARGET_NAME}</td>
+            <td width='20%'>
+                <input id="target_list_name" name="target_list_name" type='text' size='40'>
+            </td>
+            <td width='10%' scope="col">
+                <span sugar='slot28'>{$MOD.LBL_TARGET_TYPE}</span sugar='slot'>
+            </td>
+            <td  width='20%' >
 		<span sugar='slot28b'>
 		<select id="target_list_type" name="target_list_type">{$TARGET_OPTIONS}</select>
 		<input id='target_list_id' name='target_list_id' title='List ID' type="hidden" value=''>
 		</span sugar='slot'>
-	</td>
-	<td width='30%'><input type='button' value ='{$MOD.LBL_CREATE_TARGET}' class= 'button' onclick="add_target('false');"></td>
-	</tr>
-	<tr><td colspan=5>&nbsp;</td></tr>
-	</table>
+            </td>
+            <td width='30%'><input type='button' value ='{$MOD.LBL_CREATE_TARGET}' class= 'button' onclick="add_target('false');"></td>
+        </tr>
+        <tr><td colspan=5>&nbsp;</td></tr>
+    </table>
+</div>
+<div id='campaign_choice_tarselect' >
+    <label for='wizardtype_em'>{$MOD.LBL_SELECT_TARGET}</label>
+    <hr>
+    <input id="popup_target_list_type" name="popup_target_list_type" type='hidden'>
+    <input id="popup_target_list_name" name="popup_target_list_name" type="hidden" value="">
+    <input id='popup_target_list_id' name='popup_target_list_id' title='List ID' type="hidden" value=''>
+    <div id="select_target"><input title="{$MOD.LBL_SELECT_CURRENT_TARGET}" type="button" id="startbutton" value='{$MOD.LBL_SELECT_CURRENT_TARGET}' name=btn3 id='target_list_button'
+           onclick='open_popup("ProspectLists", 600, 400, "", true, false,  {$encoded_target_list_popup_request_data}, "single", true);'>
+    </span sugar='slot'>
+    </div>
+</div>
+
+<div id='campaign_choice_targets' >
 	<table width = '100%' class='detail view'>
 		<tr><td>{$MOD.LBL_TRACKERS_ADDED}</td></tr>
 		<tr><td>
@@ -105,7 +101,7 @@
 
 		</td></tr>
 	</table>
-
+</div>
 	<p>
 
 
