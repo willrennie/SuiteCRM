@@ -44,6 +44,7 @@
     <link rel="SHORTCUT ICON" href="{$FAVICON_URL}">
     <meta http-equiv="Content-Type" content="text/html; charset={$APP.LBL_CHARSET}">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <title>{$APP.LBL_BROWSER_TITLE}</title>
     {$SUGAR_JS}
@@ -59,6 +60,7 @@
         if ( YAHOO.env.ua )
             UA = YAHOO.env.ua;
         -->
+
     </script>
     {/literal}
     {$SUGAR_CSS}

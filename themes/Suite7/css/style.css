@@ -2481,7 +2481,7 @@ button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=butt
 /* set a minimum width for the header */
 #header
 {
-    min-width: 85em;
+    min-width: 100%;
 }
 /* header */
 #header div.line {
@@ -5257,3 +5257,4 @@ input[type=text].cstm_code {
 #lessmargin {
     margin: 0 50px 0 0;
 }
+

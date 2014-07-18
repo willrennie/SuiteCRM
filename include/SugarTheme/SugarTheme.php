@@ -573,8 +573,12 @@ class SugarTheme
         $html .= '<link rel="stylesheet" type="text/css" href="include/javascript/jquery/themes/base/jquery.ui.all.css" />';
         $html .= '<link rel="stylesheet" type="text/css" href="'.$this->getCSSURL('deprecated.css').'" />';
         $html .= '<link rel="stylesheet" type="text/css" href="'.$this->getCSSURL('style.css').'" />';
+        $html .= '<script src="themes/Suite7/bootstrap/js/bootstrap.min.js"></script>';
+        $html .= '<link href="themes/Suite7/bootstrap/css/bootstrap.css" rel="stylesheet">';
+        $html .= '<link href="themes/Suite7/bootstrap/css/Suite.css" rel="stylesheet">';
 
-		// sprites
+
+        // sprites
 		if(!empty($GLOBALS['sugar_config']['use_sprites']) && $GLOBALS['sugar_config']['use_sprites']) {
 
 			// system wide sprites

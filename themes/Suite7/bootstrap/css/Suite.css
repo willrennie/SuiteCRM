@@ -1,0 +1,82 @@
+/*body{*/
+    /*background-color: #EEE;*/
+/*}*/
+
+/*table{*/
+    /*border:0px;*/
+/*}*/
+
+/*td{*/
+    /*border:0px;*/
+/*}*/
+
+/*.form-signin {*/
+    /*max-width: 330px;*/
+    /*padding: 15px;*/
+    /*margin: 0px auto;*/
+/*}*/
+
+/*button,*/
+/*input[type="checkbox"],*/
+/*input[type="radio"],*/
+/*input[type="reset"],*/
+/*input[type="submit"] {*/
+    /*padding: inherit;*/
+/*}*/
+
+/*.page_container{*/
+
+    /*width:100% !important;*/
+/*}*/
+
+/*label{*/
+    /*font-weight:inherit;*/
+/*}*/
+
+h1,h2,h3,h4,h5{
+    color:#cccccc !important;
+}
+
+.dropdown-menu{
+    background-color: #000000;
+}
+
+.dropdown-menu h5 {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #000;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu > li > a {
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 1.42857;
+    white-space: nowrap;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -1px !important;
+}
+
+.dropdown-menu {
+    font-size: 12px;
+    list-style: none outside none;
+}
+
+.navbar{
+    min-height:20px;
+}
+
+.nav > li > a {
+    display: block;
+    padding-left:0px;
+    position: relative;
+}

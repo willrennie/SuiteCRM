@@ -40,31 +40,48 @@
 <a name="top"></a>
 {$DCSCRIPT}
 {if $AUTHENTICATED}
-<div id="header">
-    <div id="ajaxHeader">
-        {include file="_headerModuleList.tpl" theme_template=true}
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SuiteCRM</a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+
+
+            <ul class="nav navbar-nav navbar-left">
+                {include file="_headerModuleList.tpl" theme_template=true}
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                {include file="_headerSearch.tpl" theme_template=true}
+                {include file="_globalLinks.tpl" theme_template=true}
+                {include file="_welcome.tpl" theme_template=true}
+            </ul>
+
+            {if !$AUTHENTICATED}
+                <br/>
+                <br/>
+            {/if}
+
+            {*<div class="clear"></div>*}
+        </div>
+
     </div>
-    {include file="_globalLinks.tpl" theme_template=true}
-    {include file="_welcome.tpl" theme_template=true}
-    <div class="clear"></div>
-    {include file="_headerSearch.tpl" theme_template=true}
-    <div class="clear"></div>
-    {if !$AUTHENTICATED}
-        <br /><br />
-    {/if}
-
-    <div class="clear"></div>
-
-</div>
-
 {/if}
 
 {literal}
-    <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png'  title='empty' style='display:none'></iframe>
+    <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png' title='empty'
+            style='display:none'></iframe>
 <input id='ajaxUI-history-field' type='hidden'>
 <script type='text/javascript'>
-    if (SUGAR.ajaxUI && !SUGAR.ajaxUI.hist_loaded)
-    {
+    if (SUGAR.ajaxUI && !SUGAR.ajaxUI.hist_loaded) {
         YAHOO.util.History.register('ajaxUILoc', "", SUGAR.ajaxUI.go);
         {/literal}{if $smarty.request.module != "ModuleBuilder"}{* Module builder will init YUI history on its own *}
         YAHOO.util.History.initialize("ajaxUI-history-field", "ajaxUI-history-iframe");
@@ -72,7 +89,9 @@
     }
 </script>
 {/literal}
-
 <div id="main">
     <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
-        <table style=""" id="contentTable"><tr><td>
+        <table style=""
+        " id="contentTable">
+        <tr>
+            <td>
