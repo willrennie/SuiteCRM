@@ -77,6 +77,10 @@ h1,h2,h3,h4,h5{
 
 .nav > li > a {
     display: block;
-    padding-left:0px;
     position: relative;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #080808;
+    color: #fff;
 }

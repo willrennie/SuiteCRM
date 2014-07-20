@@ -64,6 +64,7 @@
                 {include file="_globalLinks.tpl" theme_template=true}
                 {include file="_welcome.tpl" theme_template=true}
             </ul>
+        </div>
 
             {if !$AUTHENTICATED}
                 <br/>
@@ -71,7 +72,6 @@
             {/if}
 
             {*<div class="clear"></div>*}
-        </div>
 
     </div>
 {/if}
